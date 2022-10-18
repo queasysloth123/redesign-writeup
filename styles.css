@@ -260,7 +260,7 @@ hr {
     cursor: pointer;
 }
 
-.page-button a {
+#button-wrapper a {
     color: white;
     text-decoration: none;
 }
