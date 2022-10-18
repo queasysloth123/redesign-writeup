@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="side-nav">
+            <div class="main-nav">
+                <div class="logo-wrapper">
+                    <img src="./imgs/logo.png">
+                </div>
+                <div class="menu-icon-wrapper">
+                    <img class="menu-icon" src="./imgs/menu.png" onclick="expandMenu()">
+                    <img class="exit-icon" src="./imgs/close.png" onclick="collapseMenu()">
+                </div>
+            </div>
+            <a href="#selected-website-section" onclick="collapseMenu()">Selected Website</a>
+            <a href="#usability-section" onclick="collapseMenu()">Usability Problems</a>
+            <a href="#accessibility-section" onclick="collapseMenu()">Accessibility</a>
+            <a href="#style-guide-section" onclick="collapseMenu()">Visual Style Guide</a>
+            <a href="#lofi-design-section" onclick="collapseMenu()">Lo-fi Design</a>
+            <a href="#hifi-design-section" onclick="collapseMenu()">Hi-fi Design</a>
+        </div>
+        <div class="main">
+            <div id="selected-website-section" class="section">
+                <h1>Selected Website</h1>
+                <div class="section-content">
+                    <img src="./imgs/original-website.png">
+                    <p>The chosen website to redesign is Craigslist</p>
+                </div>
+                <div id="button-wrapper">
+                    <div class="page-button"><a href="https://providence.craigslist.org/" target="_blank">Original Page</a></div>
+                    <div class="page-button"><a href="https://queasysloth123.github.io/responsive-design/" target="_blank">Redesigned Page</a></div>
+                </div>
+             </div>
+            <div id="usability-section" class="section">
+                <h1>Usability Problems</h1>
+                <div class="section-content">
+                    <b></b>
+                    <ul class="obs-list">
+                       <li>Does not follow conventional layout of mainstream online marketplaces, which can induce difficulty in navigation</li> 
+                       <li>No visual hierarchy to highlight more important points of the page. Majority of text are the same blue and small font size</li> 
+                       <li>Does not include visual aid such as images and icons to help with navigation and keep user attention</li> 
+                       <li>Overload of information for both the subcategories and locations</li> 
+                       <li>Unable to search by categories, which can generate unwanted results</li>
+                       <li>Very little sense of user self-control</li>
+                       <li>How do you feel about the layout of the kiosk?</li> 
+                       <li>Repetition of links that can be consolidated into few links</li> 
+                       <li>Difficult to spot account system</li>
+                       <li>Unable to identify the page with company name and logo</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="accessibility-section" class="section">
+                <h1>Accessibility</h1>
+                <div class="section-content">
+                    <img src="./imgs/waive.png">
+                    <p>There were a total of two errors detected by WebAIM WAVE. The first error reports the absence of an established language of the webpage. The second error mentions that the search bar is missing a form label. These two errors are more minor technical errors that won’t necssaily negatively affect the page’s overall accessibility, as the page allows for language changes and users are still able to use the search bar normally. There was also a notable alert that describes the small font size for all the subcategories under the discussion forum category, which I agree would be unnecessarily difficult to read.</p>
+                </div>
+            </div>
+            <div id="style-guide-section" class="section">
+                <h1>Visual Style Guide</h1>
+                <div class="section-content">
+                    <img src="./imgs/style-guide.png">
+                </div>
+            </div>
+            <div id="lofi-design-section" class="section">
+                <h1>Lo-fi Design</h1>
+                <div class="section-content">
+                    <div class="design-imgs"><h2>Desktop</h2><img src="./imgs/hifi-desktop.png"></div>
+                    <div class="design-imgs"><h2>Tablet</h2><img src="./imgs/hifi-tablet.png"></div>
+                    <div class="design-imgs"><h2>Phone</h2><img src="./imgs/hifi-phone.png"></div>
+                </div>
+            </div>
+            <div id="hifi-design-section" class="section">
+                <h1>Hi-fi Design</h1>
+                <div class="section-content">
+                    <div class="design-imgs"><h2>Desktop</h2><img src="./imgs/hifi-desktop.png"></div>
+                    <div class="design-imgs"><h2>Tablet</h2><img src="./imgs/hifi-tablet.png"></div>
+                    <div class="design-imgs"><h2>Phone</h2><img src="./imgs/hifi-phone.png"></div>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
